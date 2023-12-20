@@ -1,7 +1,8 @@
 :root {
     --title-color: blueviolet;
-    --text-color:grey;
-    --subtitle-color:black;
+    --text-color:blue;
+    --subtitle-color:grey;
+    --heading-color:black;
 }
 body {
 
@@ -27,6 +28,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
@@ -34,12 +36,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-.list {
-    list-style: none;
-    padding: 0;
-}
-
 .link {
     text-decoration: none;
 }
@@ -55,4 +51,35 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.title {
+    font-size: 22px;
+    color: var(--title-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-size: 19px;
+    color: var(--subtitle-color);
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+margin-bottom: 20px;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.card-item {
+    outline: 2px solid;
+    flex-basis: calc(100% / 2 - 20px);
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px 5px grey;
+}
+.card {
+    display:flex ;
+    height: 100%;
 }
