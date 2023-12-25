@@ -10,7 +10,11 @@ body {
 html {
     box-sizing: border-box;
 }
-
+.container {
+    width: 1040px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 *::before,
 *::after {
     box-sizing: inherit;
@@ -78,8 +82,42 @@ margin-bottom: 20px;
     flex-basis: calc(100% / 2 - 20px);
     border-radius: 20px;
     box-shadow: 0px 3px 3px 5px grey;
+    /* flex-basis: calc((100% / 2 - 20px)); */
+    flex-basis: calc((100% - 20px) / 2);
 }
 .card {
     display:flex ;
     height: 100%;
+}
+.card-thumb {
+background-size: cover ;
+background-repeat: no-repeat;
+background-position: center ;
+width: 50%;
+}
+.yoga1 {
+    background-image: linear-gradient(to right, rgb(37, 214, 37, 0.2), rgb(216, 216, 30, 0.2),rgb(209, 54, 54, 0.2)), url(../image/joga1\ \(1\).jpg);
+}
+.yoga2 {
+    background-image:linear-gradient(to right, rgb(37, 214, 37, 0.2), rgb(216, 216, 30, 0.2), rgb(209, 54, 54, 0.2)), url(../image/joga2\ \(1\).jpg);
+}
+.yoga3 {
+    background-image:linear-gradient(to right, rgb(37, 214, 37, 0.2), rgb(216, 216, 30, 0.2), rgb(209, 54, 54, 0.2)), url(../image/joga3\ \(1\).jpg);
+}
+.yoga4 {
+    background-image:linear-gradient(to right, rgb(37, 214, 37, 0.2), rgb(216, 216, 30, 0.2), rgb(209, 54, 54, 0.2)), url(../image/joga4\ \(1\).jpg);
+}
+.card-content {
+    width: 50%;
+    padding: 15px;
+}
+.card-heading {
+    text-transform: uppercase;
+    color: var(--subtitle-color);
+    padding-bottom: 30px;
+}
+.card-text {
+    color: var(--subtitle-color);
+        padding-bottom: 30px;
+    }
 }
